@@ -97,6 +97,7 @@ class Module3(minitorch.Module):
 def test_module(size_a: int, size_b: int) -> None:
     "Check the properties of a single module"
     module = Module2()
+    print(module)
     module.eval()
     assert not module.training
     module.train()
